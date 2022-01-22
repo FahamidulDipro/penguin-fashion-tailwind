@@ -12,7 +12,13 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+
+
+                        grey: '#F1F1F1',
+                        olive: '#A4BC46',
+                        orange: '#FABE4C',
+
+
                     }
                 }
             }
@@ -23,19 +29,68 @@
 
 <body>
     <header class="bg-[#FFFBF0]">
-        <div class="header_section border border-cyan-400 m-10 flex justify-evenly ">
+        <div class="header_section   m-10 sm:flex justify-evenly ">
             <div class="text_container">
-                <h1 class="uppercase text-5xl font-bold mt-20"><span class="text-[#FABE4C]">Be the Penguins<br></span> of Winter</h1>
+                <h1 class="uppercase sm:text-5xl text-2xl font-bold mt-20"><span class="text-[#FABE4C]">Be the Penguins<br></span> of Winter</h1>
                 <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis alias tempore ex ea velit veniam molestiae blanditiis consequatur, dolor provident!</p>
-                <button class="bg-[#A4BC46] p-3 text-2xl mt-3 text-white rounded-lg"><i class="fas fa-shopping-cart"></i> BUY NOW</button>
+                <button class="bg-[#A4BC46] p-3 text-1xl sm:text-2xl mt-3 text-white rounded-lg"><i class="fas fa-shopping-cart"></i> BUY NOW</button>
             </div>
 
-            <div class="image_container">
-                <img src="images/model.png" alt="model">
+            <div class="image_container pb-16 sm:mt-0 mt-10">
+                <img src="images/model.png" alt="model" class="w-3/4 sm:w-full">
             </div>
         </div>
     </header>
 
+
+    <!-- Card Section Starts -->
+    <h2 class="container mx-auto text-3xl my-5">Woman Jacket</h2>
+    <section class="card_section container mx-auto">
+        <div class="card_container grid sm:grid-cols-3 grid-cols-1 gap-5 my-5 ">
+            <div class="card bg-purple-400 w-80 bg-white p-5 shadow-xl rounded-lg">
+                <div class="card_image_container p-10 bg-grey rounded-lg">
+                    <img src="images/jacket-1.png" alt="jacket-1">
+                </div>
+                <div class="card_text_container">
+                    <h2 class="text-2xl font-bold mb-2">Yellow Coat Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="btn_container flex justify-between items-center mt-5">
+                        <p class="text-3xl text-orange font-bold ">$234</p>
+                        <button class="bg-cyan-400 p-3 text-2xl bg-olive text-white rounded-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-purple-400 w-80 bg-white p-5 shadow-xl rounded-lg">
+                <div class="card_image_container p-10 bg-grey rounded-lg">
+                    <img src="images/jacket-2.png" alt="jacket-2">
+                </div>
+                <div class="card_text_container">
+                    <h2 class="text-2xl font-bold mb-2">Yellow Coat Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="btn_container flex justify-between items-center mt-5">
+                        <p class="text-3xl text-orange font-bold ">$234</p>
+                        <button class="bg-cyan-400 p-3 text-2xl bg-olive text-white rounded-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-purple-400 w-80 bg-white p-5 shadow-xl rounded-lg">
+                <div class="card_image_container p-10 bg-grey rounded-lg">
+                    <img src="images/jacket-3.png" alt="jacket-3">
+                </div>
+                <div class="card_text_container">
+                    <h2 class="text-2xl font-bold mb-2">Yellow Coat Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="btn_container flex justify-between  items-center mt-5">
+                        <p class="text-3xl text-orange font-bold ">$234</p>
+                        <button class="bg-cyan-400 p-3 text-2xl bg-olive text-white rounded-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Card Section Ends -->
 
 </body>
 
